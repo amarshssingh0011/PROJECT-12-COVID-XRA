@@ -9,7 +9,7 @@ from PIL import Image
 # -----------------------------
 @st.cache_resource
 def load_covid_model():
-    return load_model("quantized_my_model.tflite")  # or model.h5 if using H5
+    return load_model("model_native_keras.keras.zip")  # or model.h5 if using H5
 
 model = load_covid_model()
 
